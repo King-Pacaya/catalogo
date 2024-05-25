@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descripción de tu portafolio">
+  <link rel="shortcut icon" href="multimedia/favicon.png">
+  <title>Portafolio</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Hero Section -->
+  <section id="inicio" class="py-20 bg-gray-900 text-center text-white">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Bienvenido a nuestro Portafolio</h1>
+      <p class="text-lg">Aquí puedes encontrar algunos de nuestros proyectos y plantillas destacadas.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portafolio" class="py-5">
+    <div class="container mx-auto">
+      <!-- Categories
+      <div class="flex justify-center mb-8">
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="all" onclick="filterPortfolio('all')">Todos</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="construccion" onclick="filterPortfolio('construccion')">Construcción</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="animales" onclick="filterPortfolio('animales')">Animales</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="viajes" onclick="filterPortfolio('viajes')">Viajes</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="transporte" onclick="filterPortfolio('transporte')">Transporte</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="marketing" onclick="filterPortfolio('marketing')">Marketing</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="fotografia" onclick="filterPortfolio('fotografia')">Fotografía</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="tecnologia" onclick="filterPortfolio('tecnologia')">Tecnología</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="salud" onclick="filterPortfolio('salud')">Salud</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="naturaleza" onclick="filterPortfolio('naturaleza')">Naturaleza</button>
+        <button class="category-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full mr-4" data-category="arte" onclick="filterPortfolio('arte')">Arte</button>
+      </div>-->
+      <!-- Grid for Portfolio Items -->
+      <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!--Construcción-->
+          <a href="https://up-bussiness.github.io/topocaj/" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/topocaj.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Topocaj | Topografía</h3>
+              <p class="text-gray-700">MÁS QUE TOPÓGRAFOS</p>
+            </div>
+          </a>
+
+          <a href="pages/frank_ghery.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/frank_ghery.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Frank Ghery | Arquitectura</h3>
+              <p class="uppercase text-gray-700">Experiencia memorable</p>
+            </div>
+          </a>
+
+          <a href="pages/mary_weber.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/mary_weber.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Mary Weber | Arquitectura</h3>
+              <p class="text-gray-700 uppercase">Agencia Urbana</p>
+            </div>
+          </a>
+
+          <a href="pages/frank.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/frank.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Frank | Arquitectura</h3>
+              <p class="text-gray-700">SIMPLEMENTE MODERNO</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_arch_1.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_arch_1.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 1 | Arquitectura</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto.</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_arch_2.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_arch_2.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 2 | Arquitectura</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto.</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_arch_3.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_arch_3.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 3 | Arquitectura</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto.</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_arch_4.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_arch_4.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 4 | Arquitectura</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto.</p>
+            </div>
+          </a>
+
+          <a href="pages/united_construction.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/united_construction.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">United Construction | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Construyendo juntos</p>
+            </div>
+          </a>
+
+          <a href="pages/Dpr1mera/index.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/dprimera.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">D'pr1mera | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Tu empresa de confianza</p>
+            </div>
+          </a>
+
+          <a href="pages/industrial_park.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/industrial_park.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Construcción Elvo | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Tradición de servicio</p>
+            </div>
+          </a>
+
+          <a href="pages/real_repair.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/real_repair.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">House Repair Service | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Mejor Calidad</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_contr_1.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_contr_1.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 1 | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_contr_2.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_contr_2.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 2 | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_contr_3.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_contr_3.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 3 | Contratistas</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto</p>
+            </div>
+          </a>
+
+          <a href="pages/villa_g_1.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/villa_g_1.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Villa G 1 | Bienes Raíces</h3>
+              <p class="text-gray-700 uppercase">Tu casa ideal</p>
+            </div>
+          </a>
+
+          <a href="pages/villa_g_2.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/villa_g_2.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Villa G 2 | Bienes Raíces</h3>
+              <p class="text-gray-700 uppercase">Tu casa ideal</p>
+            </div>
+          </a>
+
+          <a href="pages/dlujo.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/dlujo.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">DLujo | Bienes Raíces</h3>
+              <p class="text-gray-700 uppercase">Vivienda Significativa</p>
+            </div>
+          </a>
+
+          <a href="pages/temp_real_1.html" target="blank" class="portfolio-item construccion bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="multimedia/temp_real_1.png" alt="Project" class="w-full object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Plantilla 1 | Bienes Raíces</h3>
+              <p class="text-gray-700 uppercase">Descripción breve del proyecto</p>
+            </div>
+          </a>
+
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item animales bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item viajes bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item transporte bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item marketing bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item fotografia bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item tecnologia bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item salud bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item naturaleza bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+        <!--Construcción
+        <a href="" target="blank" class="portfolio-item naturaleza bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="multimedia/default.png" alt="Project" class="w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-xl mb-2">Proyecto Móvil 1</h3>
+            <p class="text-gray-700 uppercase">Descripción</p>
+          </div>
+        </a>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+  // JavaScript
+  function filterPortfolio(category) {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const categoryButtons = document.querySelectorAll('.category-button');
+
+    categoryButtons.forEach(button => {
+      if (button.dataset.category === category) {
+        button.classList.add('bg-gray-300');
+      } else {
+        button.classList.remove('bg-gray-300');
+      }
+    });
+
+    portfolioItems.forEach(item => {
+      if (category === 'all' || item.classList.contains(category)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // Llamamos a la función para que por defecto muestre todos los proyectos
+  filterPortfolio('all');
+  </script>
+</body>
+</html>
